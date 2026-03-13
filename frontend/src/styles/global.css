@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-ash-bg text-ash-text;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.ash.surface');
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme('colors.ash.border');
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.ash.muted');
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade {
+  animation: fadeIn 0.3s ease-in;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+  @apply bg-ash-surface border border-ash-border rounded text-ash-text placeholder-ash-muted transition-colors;
+  @apply focus:outline-none focus:border-ash-accent focus:ring-1 focus:ring-ash-accent;
+}
+
+button {
+  @apply transition-colors duration-200;
+}
+
+/* Love-O-Meter gradient */
+.love-gradient {
+  background: linear-gradient(90deg, #590c0c 0%, #6d54ba 50%, #3a8ec4 100%);
+}
+
+/* Darius accent bar */
+.darius-gradient {
+  background: linear-gradient(90deg, #590c0c, #3a8ec4);
+}
+
+/* Bee accent bar */
+.bee-gradient {
+  background: linear-gradient(90deg, #6d54ba, #4a9e8a);
+}
+
+/* EQ Pillar colors */
+.pillar-self-awareness { color: #34bed6; }
+.pillar-self-management { color: #77e6c5; }
+.pillar-social-awareness { color: #e5b2e6; }
+.pillar-relationship-management { color: #711ea6; }
