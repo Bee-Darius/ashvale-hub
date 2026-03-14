@@ -4,10 +4,10 @@ import { Heart, BookOpen, Send, Loader2 } from 'lucide-react';
 
 // EQ Pillars from Ashvale
 const EQ_PILLARS = [
-  { key: 'self-awareness', label: 'Self-Awareness', color: '#34bed6' },
-  { key: 'self-management', label: 'Self-Management', color: '#77e6c5' },
-  { key: 'social', label: 'Social', color: '#e5b2e6' },
-  { key: 'relationship', label: 'Relationship', color: '#711ea6' },
+  { key: 'self-awareness', label: 'Self-Awareness', color: '#8b6cc1' },
+  { key: 'self-management', label: 'Self-Management', color: '#c45c5c' },
+  { key: 'social', label: 'Social', color: '#9e7cb8' },
+  { key: 'relationship', label: 'Relationship', color: '#7a2020' },
 ];
 
 interface StatusEntry {
@@ -294,7 +294,7 @@ export default function Dashboard() {
               <div
                 className="relative h-6 rounded-full overflow-hidden cursor-pointer"
                 style={{
-                  background: 'linear-gradient(to right, #711ea6, #e5b2e6 50%, #34bed6)',
+                  background: 'linear-gradient(to right, #590c0c, #4a2060 50%, #6d54ba)',
                 }}
                 onClick={(e) => {
                   const rect = e.currentTarget.getBoundingClientRect();
@@ -310,8 +310,8 @@ export default function Dashboard() {
                   className="absolute top-0 bottom-0 w-2 rounded shadow-lg transition-all duration-500 ease-out border-2 border-white/80"
                   style={{
                     left: `calc(${(loveMeter / 10) * 100}% - 4px)`,
-                    background: loveMeter < 5 ? '#711ea6' : loveMeter > 5 ? '#34bed6' : '#e5b2e6',
-                    boxShadow: `0 0 8px ${loveMeter < 5 ? '#711ea6' : loveMeter > 5 ? '#34bed6' : '#e5b2e6'}`,
+                    background: loveMeter < 5 ? '#590c0c' : loveMeter > 5 ? '#6d54ba' : '#4a2060',
+                    boxShadow: `0 0 8px ${loveMeter < 5 ? '#590c0c' : loveMeter > 5 ? '#6d54ba' : '#4a2060'}`,
                   }}
                 />
               </div>
@@ -622,7 +622,7 @@ function EditableStatus({ label, value, onChange, onSave, accent }: {
         onChange={(e) => onChange(e.target.value)}
         onBlur={() => onSave(value)}
         onKeyDown={(e) => { if (e.key === 'Enter') { (e.target as HTMLInputElement).blur(); } }}
-        className={`w-full bg-transparent text-xs sm:text-sm font-semibold border-none outline-none p-0 focus:ring-1 focus:ring-ash-bee/30 rounded ${accent ? 'text-ash-cyan' : 'text-ash-text'}`}
+        className={`w-full bg-transparent text-xs sm:text-sm font-semibold border-none outline-none p-0 focus:ring-1 focus:ring-ash-bee/30 rounded ${accent ? 'text-ash-accent' : 'text-ash-text'}`}
       />
     </div>
   );

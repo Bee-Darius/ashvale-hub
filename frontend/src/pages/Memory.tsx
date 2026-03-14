@@ -8,9 +8,9 @@ type ViewMode = 'list' | 'salience';
 type DetailView = 'entity' | 'identity';
 
 const SALIENCE_LEVELS = [
-  { key: 'foundational', label: 'Foundational', color: 'text-ash-mint' },
-  { key: 'active-immediate', label: 'Active-Immediate', color: 'text-ash-cyan' },
-  { key: 'active-recent', label: 'Active-Recent', color: 'text-ash-pink' },
+  { key: 'foundational', label: 'Foundational', color: 'text-ash-bee' },
+  { key: 'active-immediate', label: 'Active-Immediate', color: 'text-ash-darius' },
+  { key: 'active-recent', label: 'Active-Recent', color: 'text-ash-accent' },
   { key: 'background', label: 'Background', color: 'text-ash-muted' },
   { key: 'archive', label: 'Archive', color: 'text-ash-muted opacity-60' },
 ];
@@ -268,7 +268,7 @@ export default function Memory() {
           {/* Header */}
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Brain className="w-6 h-6 text-ash-mint" />
+              <Brain className="w-6 h-6 text-ash-bee" />
               <h1 className="text-xl sm:text-2xl font-bold text-ash-text">Mind</h1>
             </div>
             <div className="flex items-center gap-2">
@@ -404,7 +404,7 @@ export default function Memory() {
               onClick={() => setIdentityExpanded(!identityExpanded)}
               className="flex items-center gap-2 py-2 text-left"
             >
-              <User className="w-4 h-4 text-ash-mint" />
+              <User className="w-4 h-4 text-ash-bee" />
               <span className="text-sm font-semibold text-ash-text">Identity</span>
               {identityExpanded ? (
                 <ChevronDown className="w-3 h-3 text-ash-muted" />
@@ -652,7 +652,7 @@ export default function Memory() {
                   <div className="space-y-1">
                     {entries.map((entry, idx) => (
                       <div key={idx} className="bg-ash-card border border-ash-border rounded-lg p-3">
-                        <p className="text-[10px] text-ash-cyan font-medium mb-1">{entry.key}</p>
+                        <p className="text-[10px] text-ash-accent font-medium mb-1">{entry.key}</p>
                         <p className="text-sm text-ash-text whitespace-pre-wrap">{entry.value}</p>
                       </div>
                     ))}
@@ -752,7 +752,7 @@ export default function Memory() {
               )}
               <div className="bg-ash-card rounded-lg px-3 py-2 border border-ash-border">
                 <p className="text-[10px] text-ash-muted uppercase">Observations</p>
-                <p className="text-sm font-medium text-ash-cyan">{selectedEntity.observations?.length || 0}</p>
+                <p className="text-sm font-medium text-ash-accent">{selectedEntity.observations?.length || 0}</p>
               </div>
             </div>
 

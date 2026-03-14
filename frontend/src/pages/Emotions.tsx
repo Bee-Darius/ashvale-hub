@@ -11,10 +11,10 @@ const EMOTION_VOCABULARY = [
 ];
 
 const PILLARS = [
-  { key: 'self-awareness', label: 'Self-Awareness', color: '#34bed6' },
-  { key: 'self-management', label: 'Self-Management', color: '#77e6c5' },
-  { key: 'social-awareness', label: 'Social Awareness', color: '#e5b2e6' },
-  { key: 'relationship-management', label: 'Relationship', color: '#711ea6' },
+  { key: 'self-awareness', label: 'Self-Awareness', color: '#8b6cc1' },
+  { key: 'self-management', label: 'Self-Management', color: '#c45c5c' },
+  { key: 'social-awareness', label: 'Social Awareness', color: '#9e7cb8' },
+  { key: 'relationship-management', label: 'Relationship', color: '#7a2020' },
 ];
 
 type TabType = 'log' | 'history' | 'analytics';
@@ -262,7 +262,7 @@ export default function Emotions() {
               </div>
               <div className="bg-ash-card border border-ash-border rounded p-4">
                 <p className="text-sm text-ash-muted mb-1">Unique Emotions</p>
-                <p className="text-3xl font-bold text-ash-mint">
+                <p className="text-3xl font-bold text-ash-bee">
                   {new Set(emotions.map((e) => e.emotion)).size}
                 </p>
               </div>

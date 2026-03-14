@@ -288,7 +288,7 @@ export default function Journal() {
                 handleDeleteEntry(selectedEntry.id);
               }
             }}
-            className="p-2 hover:bg-ash-surface rounded transition-colors text-ash-cyan flex-shrink-0"
+            className="p-2 hover:bg-ash-surface rounded transition-colors text-ash-accent flex-shrink-0"
           >
             <Trash2 className="w-5 h-5" />
           </button>

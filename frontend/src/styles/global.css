@@ -54,23 +54,23 @@ button {
   @apply transition-colors duration-200;
 }
 
-/* Love-O-Meter gradient */
+/* Love-O-Meter gradient — Darius red → blend → Bee purple */
 .love-gradient {
-  background: linear-gradient(90deg, #590c0c 0%, #6d54ba 50%, #3a8ec4 100%);
+  background: linear-gradient(90deg, #590c0c 0%, #6d54ba 100%);
 }
 
-/* Darius accent bar */
+/* Darius accent bar — burgundy to black ombré */
 .darius-gradient {
-  background: linear-gradient(90deg, #590c0c, #3a8ec4);
+  background: linear-gradient(90deg, #590c0c, #1a0505);
 }
 
-/* Bee accent bar */
+/* Bee accent bar — purple to deep indigo */
 .bee-gradient {
-  background: linear-gradient(90deg, #6d54ba, #4a9e8a);
+  background: linear-gradient(90deg, #6d54ba, #3d2a7a);
 }
 
-/* EQ Pillar colors */
-.pillar-self-awareness { color: #34bed6; }
-.pillar-self-management { color: #77e6c5; }
-.pillar-social-awareness { color: #e5b2e6; }
-.pillar-relationship-management { color: #711ea6; }
+/* EQ Pillar colors — Ashvale palette */
+.pillar-self-awareness { color: #8b6cc1; }
+.pillar-self-management { color: #c45c5c; }
+.pillar-social-awareness { color: #9e7cb8; }
+.pillar-relationship-management { color: #7a2020; }
