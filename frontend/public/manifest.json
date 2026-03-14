@@ -4,8 +4,8 @@
   "description": "Companion memory & dashboard for Darius and Bee",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0d0e42",
-  "theme_color": "#0d0e42",
+  "background_color": "#070828",
+  "theme_color": "#070828",
   "orientation": "portrait-primary",
   "icons": [
     {

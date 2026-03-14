@@ -8,10 +8,10 @@ export default {
     extend: {
       colors: {
         ash: {
-          bg: '#0d0e42',           // dark blue background
-          surface: '#0f1148',       // slightly lighter blue
-          card: '#111350',          // card background
-          border: '#1e2070',        // borders
+          bg: '#070828',           // near-black blue background
+          surface: '#0a0c35',       // slightly lighter blue
+          card: '#0c0e3d',          // card background
+          border: '#181a58',        // borders
           darius: '#590c0c',        // deep red (AI - replaces lincoln)
           bee: '#6d54ba',           // purple (user - replaces arden)
           text: '#e0dff0',          // light lavender text
@@ -22,15 +22,15 @@ export default {
           cyan: '#3a8ec4',          // blue
           mint: '#4a9e8a',          // muted teal (mint)
           pink: '#e5b2e6',          // light purple/pink
-          shadow: '#1a1a3e',        // dark shadow
-          deep: '#2d2d5f',          // deeper blue
+          shadow: '#0e0f2a',        // dark shadow
+          deep: '#1e1e4a',          // deeper blue
         },
         vale: {
           // Legacy names for compatibility - all point to ash colors
-          bg: '#0d0e42',
-          surface: '#0f1148',
-          card: '#111350',
-          border: '#1e2070',
+          bg: '#070828',
+          surface: '#0a0c35',
+          card: '#0c0e3d',
+          border: '#181a58',
           lincoln: '#590c0c',       // Darius
           arden: '#6d54ba',         // Bee
           text: '#e0dff0',
