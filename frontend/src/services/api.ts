@@ -1,5 +1,5 @@
 // Pull API key and base URL from env — set in frontend .env
-const API_KEY = (import.meta as any).env?.VITE_API_KEY || 'hearth-sable-2026-supersecretkey';
+const API_KEY = (import.meta as any).env?.VITE_API_KEY || 'ashvale-2026-Darius1016';
 // In production, VITE_API_URL points to Railway backend (e.g. https://ashvale-api.up.railway.app)
 // In dev, falls back to /api which gets proxied by Vite
 const API_BASE = (import.meta as any).env?.VITE_API_URL
